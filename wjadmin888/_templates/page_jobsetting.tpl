@@ -58,6 +58,7 @@
         	<br />
             <input type="submit" name="randdate" value="抓取" />{$randdateret}			
 	</form>
+	<h2 id="pages">Pages - <em>view次数增加</em></h2>
 	  {php}
 	    if(isset($_SESSION['catchzhaopin'])){
 		  echo '<form method="post" action="">';
