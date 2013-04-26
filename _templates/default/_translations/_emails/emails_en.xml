@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails>
+	<SendToFriend>
+		<subject>
+				我推荐给你一个好职位
+		</subject>
+		<message>
+			<![CDATA[
+				{BR}{BR}---{BR}您可以回复这个来自{YOUR_EMAIL}的邮件 
+			]]>
+		</message>
+	</SendToFriend>
+	
+	<ApplyOnline>
+		<subject>
+				[ {SITE_NAME} ] 我打算申请 {JOB_TITLE} 这个工作
+		</subject>
+		<message>
+			<![CDATA[
+				{BR}{BR}---{BR}这个工作申请是来自 {JOB_URL}
+			]]>
+		</message>
+	</ApplyOnline>
+	
+	<PublishToAdmin>
+		<newPostSubject>
+				[ {SITE_NAME}  ] 新的职位: {JOB_TITLE}
+		</newPostSubject>
+		<editedPostSubject>
+				[ {SITE_NAME}  ] 编辑职位: {JOB_TITLE}
+		</editedPostSubject>
+		<message>
+			<![CDATA[
+				{JOB_URL}
+				{BR} {JOB_TITLE} at {JOB_COMPANY}
+				{BR} {JOB_DESCRIPTION}
+				{BR} URL: {JOB_URL}
+				{BR}---{BR} Published by: {JOB_POSTER_EMAIL}
+				{BR}---{BR} Edit: {JOB_EDIT_URL}
+				{BR} Deactivate: {JOB_DEACTIVATE_URL}
+				{BR}{BR}---{BR} IP: {JOB_POSTER_IP}
+				{BR} Date: {JOB_POST_DATE}
+			]]>
+		</message>
+		<messageFirstPost>
+			<![CDATA[
+				Activate ad {JOB_ACTIVATE_URL}{BR}
+			]]>
+		</messageFirstPost>
+	</PublishToAdmin>
+	
+	<PublishPendingToUser>
+		<subject>
+				您的招聘广告发布在 {SITE_NAME}
+		</subject>
+		<message>
+			<![CDATA[
+				Hello! :){BR}{BR}
+				我们的不便表示歉意, 但因为这是第一次用这个电子邮件地址你邮寄, 我们需要手动验证它.
+				{BR}谢谢你的耐心,因为广告应该尽快发表. 当发表时我们将送你一个电子邮件!
+				{BR}{BR}从现在开始,每一个广告你邮寄这个邮件地址将立即公布.
+				{BR}{BR}---{BR}感谢您使用我们的服务!
+				{BR}The Team
+			]]>
+		</message>
+	</PublishPendingToUser>
+	
+	<PublishToUser>
+		<subject>
+				您的招聘广告 {SITE_NAME} 已经发布 
+		</subject>
+		<message>
+			<![CDATA[
+				Hello! :){BR}{BR}
+				你的广告发布,并可在 {JOB_URL} 查看
+				{BR}{BR}---{BR}编辑: {JOB_EDIT_URL}
+				{BR}取消: {JOB_DEACTIVATE_URL}
+				{BR}{BR}---{BR}感谢您使用我们的服务!
+				{BR} The {SITE_NAME} Team
+			]]>
+		</message>
+	</PublishToUser>
+	
+	<ReportSpam>
+		<subject>
+				 [SPAM on {SITE_NAME}] {JOB_TITLE}
+		</subject>
+		<message>
+			<![CDATA[
+				以下广告被报告为假/垃圾邮件: {BR}---{BR}{BR}
+				{JOB_URL}
+				{BR}{BR} {JOB_TITLE} at {JOB_COMPANY}
+				{BR}{BR} {JOB_DESCRIPTION}
+				{BR}{BR}---{BR} Published by: {JOB_POSTER_EMAIL}
+				{BR}---{BR}Edit: {JOB_EDIT_URL}
+				{BR} Deactivate: {JOB_DEACTIVATE_URL}
+				{BR}---{BR}IP: {JOB_POSTER_IP}
+				{BR} Date: {JOB_POST_DATE}
+			]]>
+		</message>
+	</ReportSpam>
+	
+	<Contact>
+		<subject>
+				 [{SITE_NAME}] contact
+		</subject>
+		<message>
+			<![CDATA[
+				{BR}{BR}---{BR} Sent by: {SENDER_NAME} <{SENDER_EMAIL}>
+				{BR} IP: {SENDER_IP}
+				{BR} Date: {SEND_DATE}
+			]]>
+		</message>
+	</Contact>
+</emails>
